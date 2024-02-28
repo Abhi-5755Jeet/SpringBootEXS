@@ -78,6 +78,11 @@ public class EmployeeController {
     }
 
 
+    @GetMapping("/read")
+    public ResponseEntity<String> read_For_Git(){
+        return ResponseEntity.ok("hello git hub");
+    }
+
 
     @GetMapping("/employ")
     public ResponseEntity<List<Employee>> getAllEmployee(){
